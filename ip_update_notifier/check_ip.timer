@@ -1,0 +1,10 @@
+[Unit]
+Description=Run check_ip.service every hour
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=60min
+Unit=check_ip.service
+
+[Install]
+WantedBy=timers.target

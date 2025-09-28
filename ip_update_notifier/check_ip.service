@@ -1,0 +1,6 @@
+[Unit]
+Description=Check public IP and send email if changed
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/check_ip.sh
